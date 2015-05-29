@@ -3,6 +3,8 @@ import sys
 
 
 #Initialization
+
+#list of pdf names
 pdflist = []
 pdfWriter = PyPDF2.PdfFileWriter()
 
@@ -17,8 +19,9 @@ for page_num in range(first_pdfReader.numPages):
 	page = first_pdfReader.getPage(page_num)
 	pdfWriter.addPage(page)
 
-
+#list of pdf File objects
 pdf_files = []
+
 for pdfname in pdflist:
 	pdf = open(pdfname, 'rb')
 	pdf_files.append(pdf)

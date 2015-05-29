@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<style>
+	#pdfnames{
+		list-style-type: none;
+	}
+	</style>
+	<body>
+		<ul id="pdfnames">
+		{% for f in filenames %}
+			<li class="filename"> {{f}} </li>
+		{% endfor %}
+		</ul>
+
+	</body>
+
+</html>
